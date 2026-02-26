@@ -65,3 +65,12 @@ if (dogCard) {
       dogCard.classList.toggle("flipped");
    });
 }
+
+
+// Opg 6 - Lydfil
+
+const soundCar = new Audio("sound/car-engine-sound.mp3");
+
+const car1Card = document.querySelector("#car1");
+const car2Card = document.querySelector("#car2");
+const car3Card = document.querySelector("#car3");
