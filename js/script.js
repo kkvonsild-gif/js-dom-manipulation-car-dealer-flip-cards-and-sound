@@ -67,10 +67,22 @@ if (dogCard) {
 }
 
 
-// Opg 6 - Lydfil
+// OPGAVE 6 - LYDFIL
 
+// Opretter variabel der peger på lyden af en bil:
 const soundCar = new Audio("sound/car-engine-sound.mp3");
 
+// Henter elementerne via deres id'er:
 const car1Card = document.querySelector("#car1");
 const car2Card = document.querySelector("#car2");
 const car3Card = document.querySelector("#car3");
+
+// Laver en if-betingelse (if carCard is true (findes)). Dernæst click-eventlistener med funktioner:
+if (car1Card) {
+   car1Card.addEventListener("click", function(){
+      soundCar.play();
+      //play indbygget funktion i JS der starter afspilning af lyden.
+      car1Card.classList.toggle("flipped");
+      //classList giver adgang til alle de CSS-klasser, elementet har. toggle er en switch.
+   })
+}
